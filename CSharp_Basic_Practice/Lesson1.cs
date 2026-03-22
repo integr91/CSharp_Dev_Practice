@@ -15,7 +15,7 @@ public class Lesson1 : BaseLesson
     // Задание 1: поменять местами значения двух переменных int
     private void SwapValues()
     {
-        
+        Console.WriteLine("Гол");
     }
 
     // Задание 2 (*): поменять местами два int без третьей переменной
