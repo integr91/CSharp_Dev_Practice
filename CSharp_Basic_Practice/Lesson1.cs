@@ -15,20 +15,39 @@ public class Lesson1 : BaseLesson
     // Задание 1: поменять местами значения двух переменных int
     private void SwapValues()
     {
-        Console.WriteLine("Гол");
+        int a = 20;
+        int b = 10;
+        int f ;
+        Console.WriteLine($"Число {a},{b}");
+        f = a;
+        a = b;
+        b = f;
+        Console.WriteLine($"Число {a},{b}");
     }
 
     // Задание 2 (*): поменять местами два int без третьей переменной
     private void SwapWithoutTemp()
     {
-        
+        int a = 3;
+        int b = 8;
+        Console.WriteLine($"{a},{b}");
+        a = a+b;
+        b = b-a;
+        a = a+b;
+        b = -b;
+        Console.WriteLine($"{a},{b}");
     }
 
     // Задание 3: вычислить сумму и произведение цифр числа
     // Формат вывода: "Сумма = {x}, Произведение = {y}"
     private void SumAndProduct()
     {
-        
+        int x = 10;
+        int y = 20;
+        x += y;
+        y *= x;
+        Console.WriteLine($"{x} {y}");
+        // Цикл
     }
 
     // Задание 4 (*): запросить имя и возраст пользователя, вывести строку приветствия
@@ -46,6 +65,6 @@ public class Lesson1 : BaseLesson
     // Задание 6 (*): конвертер из десятичной системы счисления в двоичную
     private void ToBinary()
     {
-        
+        // Цикл
     }
 }
