@@ -24,7 +24,7 @@ public class Lesson1 : BaseLesson
         c = a;
         a = b;
         b = c;
-        Console.WriteLine($"Число a-{a}, b-{b}");
+        Console.WriteLine($"Число a-{a}, b-{b}"); 
     }
 
     // Задание 2 (*): поменять местами два int без третьей переменной
@@ -35,7 +35,6 @@ public class Lesson1 : BaseLesson
         a = a + b;
         b = a - b;
         a = a - b;
-        b = b;
         Console.WriteLine($"Число a-{a}, b-{b}");
     }
 
