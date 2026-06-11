@@ -2,13 +2,13 @@ while (true)
 {
     Console.Clear();
     Console.WriteLine("=== C# Basic Practice ===");
-    Console.Write("Урок (1-8), 0 — выход: ");
+    Console.Write("Урок (1-9), 0 — выход: ");
 
     string? input = Console.ReadLine();
 
-    if (!int.TryParse(input, out int choice) || choice < 0 || choice > 8)
+    if (!int.TryParse(input, out int choice) || choice < 0 || choice > 9)
     {
-        Console.WriteLine("Введите число от 0 до 8.");
+        Console.WriteLine("Введите число от 0 до 9.");
         Console.ReadKey();
         continue;
     }
@@ -25,6 +25,7 @@ while (true)
         6 => new Lesson6(),
         7 => new Lesson7(),
         8 => new Lesson8(),
+        9 => new Lesson9(),
         _ => throw new InvalidOperationException()
     };
 
